@@ -29,6 +29,18 @@ class Bot:
         atexit.register(self.stop)
         self.stop()
 
+    def analog_control(self, x0, x1, y0, y1):
+        for w in self.left_wheels:
+            w.set_speed(y0)
+        for w in self.right_wheels:
+            w.set_speed(y1)
+        for w in self.left_diag:
+            w.add_mix(x0)
+        for w in self.right_diag:
+            w.add_mix(x1)
+        for w in self.all_wheels:
+            w.update_speed()
+
     def stop(self):
         for w in self.all_wheels:
             w.stop()
