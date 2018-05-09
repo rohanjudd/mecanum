@@ -59,7 +59,7 @@ class Wheel:
         print("out_speed = {}".format(out_speed))
         if self.invert:
             out_speed = out_speed*-1
-        self.motor.set_speed(abs(out_speed))
+        self.motor.setSpeed(abs(out_speed))
 
 
 
