@@ -3,8 +3,8 @@ import atexit
 from Adafruit_MotorHAT import Adafruit_MotorHAT
 from wheel import Wheel
 
-FL_id = 1
-FR_id = 2
+FL_id = 2
+FR_id = 1
 RL_id = 3
 RR_id = 4
 
