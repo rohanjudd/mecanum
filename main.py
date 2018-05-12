@@ -46,6 +46,7 @@ while True:
         bot.stop()
     elif inp == 'q':
         close()
+    time.sleep(0.5)
 
 
 
