@@ -66,7 +66,6 @@ class Wheel:
         self.motor.setSpeed(int(abs(out_speed)))
         if out_speed >= 0:
             self.forward()
-            print("forward")
             print("id: {}  forward".format(self.id))
         else:
             self.backward()
