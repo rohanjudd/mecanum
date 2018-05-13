@@ -64,8 +64,13 @@ class Wheel:
             print("inverting")
             out_speed = out_speed*-1
         print("id: {}  inv: {}  in_speed: {} out_speed: {}".format(self.id, self.invert, self.speed, out_speed))
-        self.forward() if self.speed >= 0 else self.backward()
         self.motor.setSpeed(int(abs(out_speed)))
+        if self.speed >= 0:
+            self.forward()
+        else
+            self.backward()
+        #self.forward() if self.speed >= 0 else self.backward()
+
 
 
 
