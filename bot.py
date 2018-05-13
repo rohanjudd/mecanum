@@ -16,9 +16,9 @@ class Bot:
     def __init__(self):
         self.motor_controller = Adafruit_MotorHAT(i2c_address)
         self.FL = Wheel(self.motor_controller, FL_id, trim[0], invert=True)
-        self.FR = Wheel(self.motor_controller, FR_id, trim[1], invert=True)
+        self.FR = Wheel(self.motor_controller, FR_id, trim[1])
         self.RL = Wheel(self.motor_controller, RL_id, trim[2], invert=True)
-        self.RR = Wheel(self.motor_controller, RR_id, trim[3], invert=True)
+        self.RR = Wheel(self.motor_controller, RR_id, trim[3])
 
         self.all_wheels = [self.FL, self.FR, self.RL, self.RR]
         self.left_wheels = [self.FL, self.RL]
