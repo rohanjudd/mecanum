@@ -59,7 +59,9 @@ class Wheel:
     def update_speed(self):
         out_speed = map_speed(self.speed)
         out_speed += self.trim
+        print("id: {}  inv: {}  in_speed: {} out_speed: {}".format(self.id, self.invert, self.speed, out_speed))
         if self.invert:
+            print("inverting")
             out_speed = out_speed*-1
         print("id: {}  inv: {}  in_speed: {} out_speed: {}".format(self.id, self.invert, self.speed, out_speed))
         self.forward() if self.speed >= 0 else self.backward()
