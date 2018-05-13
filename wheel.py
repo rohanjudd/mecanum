@@ -25,6 +25,9 @@ class Wheel:
         self.speed = 0
         self.release()
 
+    def invert(self):
+        self.invert = not self.invert
+
     def release(self):
         self.motor.run(Adafruit_MotorHAT.RELEASE)
 
@@ -50,6 +53,7 @@ class Wheel:
 
     def write_speed(self, speed):
         self.speed = constrain(speed)
+        print("id: {}  speed: {}  self.speed: {}".format(self.id, speed, self.speed))
         self.update_speed()
 
     def update_speed(self):

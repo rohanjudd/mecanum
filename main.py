@@ -46,6 +46,8 @@ while True:
         bot.stop()
     elif inp == 'q':
         close()
+    elif inp == 'i':
+        bot.inv_test()
     time.sleep(0.5)
 
 

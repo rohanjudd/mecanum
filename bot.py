@@ -1,5 +1,3 @@
-import atexit
-
 from Adafruit_MotorHAT import Adafruit_MotorHAT
 from wheel import Wheel
 
@@ -76,6 +74,9 @@ class Bot:
             w.write_speed(speed)
         for w in self.right_diag:
             w.write_speed(speed*-1)
+
+    def inv_test(self):
+        self.FL.invert()
 
 
 
