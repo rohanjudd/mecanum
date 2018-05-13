@@ -53,7 +53,7 @@ class Wheel:
 
     def write_speed(self, speed):
         self.speed = constrain(speed)
-        print("id: {}  speed: {}  self.speed: {}".format(self.id, speed, self.speed))
+        #print("id: {}  speed: {}  self.speed: {}".format(self.id, speed, self.speed))
         self.update_speed()
 
     def update_speed(self):
