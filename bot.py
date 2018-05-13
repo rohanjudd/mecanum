@@ -1,3 +1,4 @@
+import atexit
 from Adafruit_MotorHAT import Adafruit_MotorHAT
 from wheel import Wheel
 
