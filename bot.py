@@ -77,7 +77,7 @@ class Bot:
             w.write_speed(speed*-1)
 
     def inv_test(self):
-        self.FL.invert()
+        self.FL.switch_invert()
 
 
 

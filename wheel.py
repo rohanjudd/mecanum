@@ -25,7 +25,7 @@ class Wheel:
         self.speed = 0
         self.release()
 
-    def invert(self):
+    def switch_invert(self):
         self.invert = not self.invert
 
     def release(self):
